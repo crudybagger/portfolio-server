@@ -11,6 +11,6 @@ let server = http.createServer((req,res) => {
     // req.send("Hello World");
 })
 
-server.listen(3000, ()=>{
-    console.log("Server Started on PORT 3000");
+server.listen(process.env.PORT, ()=>{
+    console.log("Server Started on PORT ", process.env.PORT);
 });
