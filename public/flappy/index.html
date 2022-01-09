@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js" integrity="sha512-cuCpFhuSthtmbmQ5JjvU7msRYynRI67jVHsQhTP8RY+H4BC9qa9kQJeHTomV9/QnOWJbDpLFKdbIHtqTomJJug==" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/addons/p5.sound.js" integrity="sha512-KxzVm+IqxNNq0+SzT/zzd5PHxY4LPrN+v5gZJ6+JKqjeU3Cr4y/djAg5eNlKDWurn1SeKZpql/yeOMWblMSzOg==" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.js" integrity="sha512-vbQipZz1qtmGg33hAJZGVnhVREvHUvmKRHY1UqfjaMIBlZ4tVGGztQbC51A2n+VlTgIQbfRFD/GDDfbp/V5opg==" crossorigin="anonymous"></script>
+    <style>
+        body{
+            text-align: center;
+            font-size: 15pt;
+            margin: 0;
+        }
+        h2 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="./indexplay.html"><h2 style="text-align: center;">Click Here to play the game yourself</h2> </a>
+    <div>
+        <h3>How to Use this Correctly ?</h3>
+        <p>
+            This Neuro Evolution version of the game will train itself.<br>
+            You can control the speed of training with the sildier given below the game graphics frame(set to 20% by default).<br>
+            <b>Higher Speeds may cause Frames to Drop on some devices!!!</b><br>
+            It only takes about 30 seconds of runtime (on 100% speed) to see Visible Changes.<br>
+             After training set the speed to Lowest to see the magic. 
+        </p>
+    </div>
+</body>
+<script src="./js/NE/libraries/matrix.js"></script>
+<script src="./js/NE/libraries/nn.js"></script>
+<script src="./js/NE/ga.js"></script>
+<script src="./js/NE/bird.js"></script>
+<script src="./js/NE/game.js"></script>
+<script src="./js/NE/pipe.js"></script>
+</html>

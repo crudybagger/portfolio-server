@@ -1,16 +1,14 @@
-let http = require('http');
+let express = require('express');
+let app = express();
+app.use(express.static('public'));
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
 
-let server = http.createServer((req,res) => {
-    console.log("There was a request");
-    switch(req.url){
-        case "/" : {
-            res.write("<h1>Hello World</h1>");
-            res.end();
-        }
-    }
-    // req.send("Hello World");
-})
+app.get('/', (req, res) => {
+  res.render('index.html');
+});
 
-server.listen(process.env.PORT, ()=>{
-    console.log("Server Started on PORT ", process.env.PORT);
+// process.env.PORT = 5050;
+app.listen(process.env.PORT || 5050, () => {
+  console.log('Server Started on PORT ', process.env.PORT || 5050);
 });
